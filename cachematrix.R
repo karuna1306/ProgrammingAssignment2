@@ -29,7 +29,7 @@ cacheSolve <- function(Inputmatrix, ...) {
     message("getting cached data")
     return(invrInputmatrix)
   }
-  ## If inverse is not present in cache then below function will calculate Inverse of input matrix
+  ## If inverse is not present in cache then below function will calculate Inverse of input matrix.
   mat <- Inputmatrix$get()           
   invrInputmatrix <- solve(mat, ...)
   Inputmatrix$setinvrerse(invrInputmatrix)
